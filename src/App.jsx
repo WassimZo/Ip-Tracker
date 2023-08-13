@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col relative">
-      <div className="w-full bg-[url('/images/pattern-bg-desktop.png')] h-[35vh] flex flex-col items-center">
+      <div className="w-full bg-[url('/images/pattern-bg-desktop.png')] h-[35vh] bg-no-repeat bg-cover flex flex-col items-center">
         <h1 className="font-bold text-lg sm:text-2xl mt-4 sm:mt-8  text-slate-100">
           IP Address Tracker
         </h1>
