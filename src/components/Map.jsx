@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import { useSelector } from "react-redux";
-import "leaflet/dist/leaflet.css";
+import { icon } from "leaflet";
 
 export default function Map() {
   const ipInfo = useSelector((state) => state.ipInfo);
   const [MarkupLoc, setMarkupLoc] = useState([0, 0]);
   const [centerLoc, setCenterLoc] = useState([0, 0]);
+  const mapIcon = icon({
+    iconUrl: "/images/icon-location.svg",
+    iconSize: [32, 40],
+  });
 
   useEffect(() => {
     if (ipInfo.location.city) {
@@ -27,7 +31,7 @@ export default function Map() {
       scrollWheelZoom={false}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Marker position={MarkupLoc}>
+      <Marker position={MarkupLoc} icon={mapIcon}>
         <Popup>
           <b>{ipInfo.ip}</b>
         </Popup>

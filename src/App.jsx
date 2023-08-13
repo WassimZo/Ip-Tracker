@@ -4,7 +4,6 @@ import FloatingInformations from "./components/FloatingInformations";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getIpInfo } from "./features/ipInfo";
-import "leaflet/dist/leaflet.css";
 
 function App() {
   const dispatch = useDispatch();

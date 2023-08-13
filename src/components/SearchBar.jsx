@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { getIpInfo } from "../features/ipInfo";
 import { useRef } from "react";
+import arrowIcon from "../assets/icon-arrow.svg";
 
 export default function SearchBar() {
   const dispatch = useDispatch();
@@ -21,10 +22,10 @@ export default function SearchBar() {
           ref={ipRef}
         />
         <button
-          className="bg-black text-slate-100 py-2 sm:py-4 px-3 sm:px-6 text-sm sm:text-lg rounded-r-lg h-full hover:bg-gray-500"
+          className="bg-black text-slate-100 py-2 sm:py-6 px-3 sm:px-6 rounded-r-lg h-full hover:bg-gray-700"
           type="submit"
         >
-          {">"}
+          <img src={arrowIcon} alt="" />
         </button>
       </div>
     </form>
