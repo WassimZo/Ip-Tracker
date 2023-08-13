@@ -31,13 +31,13 @@ Users should be able to:
 
 ### Screenshot
 
-!["IP TRACKER"](./Screenshot.png)
+!["IP TRACKER"](/images/Screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/WassimZo/Ip-Tracker)
-- Live Site URL: [Add live site URL here](https://ip-tracker-wass.vercel.app/)
+- Solution URL: [https://github.com/WassimZo/Ip-Tracker](https://github.com/WassimZo/Ip-Tracker)
+- Live Site URL: [https://ip-tracker-wass.vercel.app/](https://ip-tracker-wass.vercel.app/)
 
 ## My process
 
