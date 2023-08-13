@@ -22,7 +22,7 @@ export default function SearchBar() {
           ref={ipRef}
         />
         <button
-          className="bg-black text-slate-100 py-2 sm:py-6 px-3 sm:px-6 rounded-r-lg h-full hover:bg-gray-700"
+          className="bg-black text-slate-100 py-3 sm:py-6 px-3 sm:px-6 rounded-r-lg h-full hover:bg-gray-700"
           type="submit"
         >
           <img src={arrowIcon} alt="" />
