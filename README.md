@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-!["IP TRACKER"](/images/Screenshot.png)
+![IP TRACKER](https://github.com/WassimZo/Ip-Tracker/blob/master/public/images/Screenshot.png)
 
 
 ### Links
