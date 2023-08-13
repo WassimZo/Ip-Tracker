@@ -28,7 +28,7 @@ export default function Map() {
       className="min-w-full min-h-[65vh]"
       center={centerLoc}
       zoom={13}
-      scrollWheelZoom={false}
+      scrollWheelZoom={true}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Marker position={MarkupLoc} icon={mapIcon}>
