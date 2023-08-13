@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import { useSelector } from "react-redux";
+import "leaflet/dist/leaflet.css";
 
 export default function Map() {
   const ipInfo = useSelector((state) => state.ipInfo);

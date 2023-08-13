@@ -4,6 +4,7 @@ import FloatingInformations from "./components/FloatingInformations";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getIpInfo } from "./features/ipInfo";
+import "leaflet/dist/leaflet.css";
 
 function App() {
   const dispatch = useDispatch();
@@ -20,7 +21,11 @@ function App() {
           IP Address Tracker
         </h1>
         <SearchBar />
-        {ipInfo.error.state && <span className="mt-1 text-slate-100">Please enter a valid ip address.</span>}
+        {ipInfo.error.state && (
+          <span className="mt-1 text-slate-100">
+            Please enter a valid ip address.
+          </span>
+        )}
       </div>
       <div className="w-full h-full">
         <Map />
